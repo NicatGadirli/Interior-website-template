@@ -1,0 +1,252 @@
+//Contact Map
+.container1 {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  .contactMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 24px;
+    margin-bottom: 48px;
+    width: 100%;
+    .mapArea {
+      width: 1170px;
+      height: 480px;
+    }
+  }
+}
+
+//Contact Form
+.form {
+  .container1 {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    .row {
+      gap: 100px;
+      margin-bottom: 100px;
+      margin-top: 80px;
+      .leftSide {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+        form {
+          textarea {
+            width: 100%;
+            border: 1px solid #e5e6e9;
+            height: 200px;
+            padding-left: 18px;
+            font-size: 13px;
+            background: transparent;
+            margin-bottom: 30px;
+          }
+          .name {
+            border: 1px solid #e5e6e9;
+            border-radius: 0px;
+            height: 48px;
+            padding-left: 18px;
+            font-size: 13px;
+            background: transparent;
+            width: 49%;
+            margin-bottom: 30px;
+          }
+          .email {
+            border: 1px solid #e5e6e9;
+            border-radius: 0px;
+            height: 48px;
+            padding-left: 18px;
+            font-size: 13px;
+            background: transparent;
+            width: 49%;
+            margin-bottom: 30px;
+          }
+          .subject {
+            border: 1px solid #e5e6e9;
+            border-radius: 0px;
+            height: 48px;
+            padding-left: 18px;
+            font-size: 13px;
+            background: transparent;
+            width: 98%;
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .formBtn {
+        margin-bottom: 30px;
+        margin-top: 16px;
+        a {
+          display: inline-block;
+          padding: 18px 44px;
+          font-size: 14px;
+          border: 1px solid #ff1313;
+          letter-spacing: 3px;
+          color: #ff1313;
+          transition: all 0.3s ease-out 0s;
+          &:hover {
+            background: #ff1313;
+            color: #fff !important;
+            border: 1px solid #ff1313;
+          }
+        }
+      }
+    }
+    .rightSide {
+      flex-direction: column;
+      .contactItem {
+        margin-bottom: 25px;
+        a {
+          color: #2a2a2a;
+          font-weight: 500;
+          span {
+            color: #8a8a8a;
+            font-family: "Barlow", sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container1 {
+    max-width: 100%;
+  }
+  //Contact Map
+  .container1 {
+    .mapArea {
+      width: 690px;
+      height: 480px;
+    }
+  }
+  //Contact Form
+  .form {
+    .container1 {
+      max-width: 100%;
+      .row {
+        flex-direction: column;
+        .leftSide {
+          form {
+            textarea {
+              margin-top: 60px;
+            }
+          }
+        }
+      }
+      .rightSide {
+        flex-direction: column;
+        .contactItem {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container1 {
+    max-width: 100%;
+  }
+  //Contact Map
+  .container1 {
+    .mapArea {
+      width: 1170px;
+      height: 480px;
+    }
+  }
+  //Contact Form
+  .form {
+    .container1 {
+      max-width: 100%;
+      .row {
+        flex-direction: column;
+        .leftSide {
+          form {
+            textarea {
+              margin-top: 60px;
+            }
+          }
+        }
+      }
+      .rightSide {
+        flex-direction: column;
+        .contactItem {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container1 {
+    max-width: 100%;
+    //Contact Map
+    .mapArea {
+      width: 510px;
+      height: 480px;
+    }
+  }
+  //Contact Form
+  .form {
+    .container1 {
+      max-width: 100%;
+      .row {
+        flex-direction: column;
+        .leftSide {
+          form {
+            textarea {
+              margin-top: 60px;
+            }
+          }
+        }
+      }
+      .rightSide {
+        flex-direction: column;
+        .contactItem {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container1 {
+    max-width: 100%;
+    //Contact Map
+    .mapArea {
+      display: none;
+    }
+  }
+  //Contact Form
+  .form {
+    .container1 {
+      max-width: 100%;
+      .row {
+        flex-direction: column;
+        .leftSide {
+          form {
+            textarea {
+              margin-top: 60px;
+            }
+          }
+        }
+      }
+      .rightSide {
+        flex-direction: column;
+        .contactItem {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

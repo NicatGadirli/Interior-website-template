@@ -1,0 +1,39 @@
+.aboutHero {
+  background-image: url(../images/aboutsec.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(1, 10, 28, 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+  .container {
+    .row {
+      height: 500px;
+      justify-content: center;
+      align-items: center;
+      .aboutHeroTitle {
+        padding-top: 80px;
+        h2 {
+          color: #fff;
+          font-size: 70px;
+          font-weight: 700;
+          text-transform: capitalize;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
